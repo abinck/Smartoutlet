@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1"
+    tools:context=".ProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#97003341"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="PROFILE"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#0083a7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Name                     : "/>
+
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Consumer no        : "/>
+
+            <TextView
+                android:id="@+id/pcons_no"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Electrical Section : "/>
+
+            <TextView
+                android:id="@+id/pelect_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Traffic                    : "/>
+
+            <TextView
+                android:id="@+id/ptraffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Supply Voltage     : "/>
+
+            <TextView
+                android:id="@+id/psupply_voltage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Mobile                    : "/>
+
+            <TextView
+                android:id="@+id/pmob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Email                      : "/>
+
+            <TextView
+                android:id="@+id/pemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/pDone_bt"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shapesignup"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

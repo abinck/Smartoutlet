@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1"
+    tools:context=".ConsuptionHistory">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#97003341"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="CONSUMPTION HISTORY"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/con_his"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#0083a7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Consumed until now     : "/>
+
+            <TextView
+                android:id="@+id/consUnits"
+                android:layout_width=   "match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Amount                            : "/>
+
+            <TextView
+                android:id="@+id/consAmount"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Maximum Consumption: "/>
+
+            <TextView
+                android:id="@+id/Maxcons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Minimum Consumption : "/>
+
+            <TextView
+                android:id="@+id/Mincons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Traffic Rate                      : "/>
+
+            <TextView
+                android:id="@+id/consTraffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Total Cost                        : "/>
+
+            <TextView
+                android:id="@+id/consCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/cDonebt"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shapesignup"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
